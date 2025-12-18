@@ -10,24 +10,41 @@
 </head>
 <body>
 
-    <main>
-        <header>
+    <main class="main-section">
+        <header class="main-section--header">
             <figure class="logo-container">
-                <img class="company-logo" src="./assets/logo.svg" alt="coffeeroasters-logo">
-                <figcaption class="company-name">coffeeroasters</figcaption>
+                <a href="#">
+                    <img class="company-logo" src="./assets/logo.svg" alt="coffeeroasters-logo">
+                    <figcaption class="company-name">coffeeroasters</figcaption>
+                </a>
             </figure>
 
-            <nav>
+            <div class="navigation-background">                
+                <!--just a background for navigation List...-->
+            </div>
+
+            <nav class="nav-list">
                 <ul>
-                    <li>HOME</li>
-                    <li>ABOUT US</li>
-                    <li>Create your plan</li>
+                    <li class="li">
+                        <a href="#">HOME</a>
+                    </li>
+                    <li class="li">
+                        <a href="#">ABOUT US</a>
+                    </li>
+                    <li class="li">
+                        <a href="#">Create your plan</a>
+                    </li>
                 </ul>
             </nav>
     
-            <div>
-                <img class="icon-close" src="./assets/shared/mobile/icon-close.svg" alt="icon-close">
-                <img class="icon-hamburger" src="./assets/shared/mobile/icon-hamburger.svg" alt="icon-hamburger.svg">
+            <div class="menu-btns">
+                <button class="menu-btn menu-btn--close display-none">
+                    <img class="icon-close" src="./assets/shared/mobile/icon-close.svg" alt="icon-close">
+                </button>
+
+                <button class="menu-btn menu-btn--hamburger">
+                    <img class="icon-hamburger" src="./assets/shared/mobile/icon-hamburger.svg" alt="icon-hamburger.svg">
+                </button>
             </div>
         </header>
 
@@ -47,6 +64,8 @@
         </article>
 
     </main>
+
+    <script src="./script.js"></script>
     
 </body>
 </html>

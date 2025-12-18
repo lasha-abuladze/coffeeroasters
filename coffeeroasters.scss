@@ -31,11 +31,139 @@
     font-display: swap;
 }
 
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+}
 
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+// font variables
 $font-Fraunces: "Fraunces";
 $font-Barlow: "Barlow";
 
 
+// color variables
+
+$darkblue: #333D4B;
+
+
+
+.display-none {
+    display: none;
+}
+
+.navigation-background--active {
+    z-index: 1 !important;
+    opacity: 1 !important;
+}
+
+.nav-list--active {
+    z-index: 2 !important;
+}
+
+.li-active {
+    transform: translateX(0) !important;
+}
+
+
 body {
+    background-color: rgb(254, 252, 247);
+    position: relative;
+}
+
+button {
+    cursor: pointer;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.main-section {
+    padding: 32px 24px;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    .main-section--header {
+        @include flex-row();
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 41px;
+
+        .logo-container {
+            z-index: 2;
+
+            a {
+                @include flex-row();
+                align-items: center;
+                gap: 6px;
+
+            }
+            .company-name {
+                color: $darkblue;
+                font-family: $font-Fraunces;
+                font-size: 18px;
+                font-weight: 700;
+            }
+        }
+
+        .navigation-background {
+            position: absolute;
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(180deg, rgba(254, 252, 247, 1), rgba(254, 252, 247, 0.2));
+            left: 0;
+            top: 0;
+            transition: all 0.5s;
+            z-index: -1;
+            opacity: 0;
+        }
+
+        .nav-list {
+            position: absolute;
+            overflow: hidden !important;
+            width: 100%;
+            height: 100vh;
+            top: 0;
+            left: 0;
+            text-align: center;
+            padding-top: 130px;
+            box-sizing: border-box;
+            z-index: -1;
+
+            li {
+                margin-bottom: 32px;
+                transition: all 1s;
+
+                &:last-child {
+                    margin: 0;
+                    transform: translateX(100%);
+                }
+
+                &:first-child {
+                    transform: translateX(100%);
+                }
+
+                &:nth-child(2) {
+                    transform: translateX(-100%);
+                }
+            }
+        }
+
+        .menu-btns {
+            width: 16px;
+            height: 16px;
+            transition: all 0.5s;
+            z-index: 2;
+        }
+
+
+    }
 
 }
+
