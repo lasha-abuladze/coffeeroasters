@@ -11,7 +11,10 @@
 <body>
 
     <main class="main-section">
+
+        <!--same header for all pages-->
         <header class="main-section--header">
+            <!--logo's conainer-->
             <figure class="logo-container">
                 <a href="#">
                     <img class="company-logo" src="./assets/logo.svg" alt="coffeeroasters-logo">
@@ -23,6 +26,7 @@
                 <!--just a background for navigation List...-->
             </div>
 
+            <!--main navigation-->
             <nav class="nav-list">
                 <ul>
                     <li class="li">
@@ -37,6 +41,7 @@
                 </ul>
             </nav>
     
+            <!--close and open buttons. for mobile screen-->
             <div class="menu-btns">
                 <button class="menu-btn menu-btn--close display-none">
                     <img class="icon-close" src="./assets/shared/mobile/icon-close.svg" alt="icon-close">
@@ -48,9 +53,10 @@
             </div>
         </header>
 
-        <article>
+        <!---->
+        <article class="main-section--article">
             <h1>
-                Great coffee made simple.
+                Great coffee <span>made simple.</span>
             </h1>
 
             <p>
@@ -58,9 +64,7 @@
                 coffees from our best roasters delivered directly to your door, at your schedule.
             </p>
 
-            <button>
-                Create your plan
-            </button>
+            <a class="create-plan--btn a-btn" href="#">Create your plan</a>
         </article>
 
     </main>
