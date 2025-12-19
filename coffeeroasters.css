@@ -184,6 +184,7 @@ button {
 }
 .section--our-collection .section--our-collection--header {
   position: relative;
+  margin-bottom: 40px;
 }
 .section--our-collection .section--our-collection--header .white-gradient {
   position: absolute;
@@ -200,7 +201,7 @@ button {
   font-family: "Fraunces";
 }
 .section--our-collection .coffee-type-container {
-  margin-top: 40px;
+  margin-top: 50px;
 }
 .section--our-collection .coffee-type-container .coffee-type-img {
   width: 220px;
