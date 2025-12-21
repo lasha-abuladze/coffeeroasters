@@ -1,0 +1,313 @@
+
+
+////////  F O N T S /////
+
+
+@font-face {
+    font-family: "Fraunces";
+    src: url(./fonts/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Fraunces";
+    src: url(./fonts/Fraunces-Italic-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+    font-style: italic;
+    font-weight: 100 900;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Barlow";
+    src: url(./fonts/Barlow-Regular.ttf);
+        font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Barlow";
+    src: url(./fonts/Barlow-Italic.ttf);
+    font-style: italic;
+    font-weight: 100 900;
+    font-display: swap;
+}
+
+//////////////////////////////////
+/// FLEX DIRECTIONS ///////
+
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/////////////////
+// font variables
+$font-Fraunces: "Fraunces";
+$font-Barlow: "Barlow";
+
+
+
+//////////////////
+// color variables
+$darkgreen: #333D4B;
+$maingreen: #0E8784;
+$main-white: #FEFCF7;
+
+
+
+//////////////////
+/// GENERAL STYLES
+
+.display-none {
+    display: none;
+}
+
+.navigation-background--active {
+    z-index: 1 !important;
+    opacity: 1 !important;
+}
+
+.nav-list--active {
+    z-index: 2 !important;
+}
+
+.li-active {
+    transform: translateX(0) !important;
+}
+
+
+body {
+    background-color: rgb(254, 252, 247);
+    position: relative;
+    padding: 32px 24px;
+    box-sizing: border-box;
+    color: $main-white;
+}
+
+button {
+    cursor: pointer;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.section-gen {
+
+}
+
+
+
+
+///////////////////////////////
+/// MAIN STYLES  //////
+
+.main-section {
+    // padding: 32px 24px;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    .main-section--header {
+        @include flex-row();
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 41px;
+
+        .logo-container {
+            z-index: 2;
+
+            a {
+                @include flex-row();
+                align-items: center;
+                gap: 6px;
+
+            }
+            .company-name {
+                color: $darkgreen;
+                font-family: $font-Fraunces;
+                font-size: 18px;
+                font-weight: 700;
+            }
+        }
+
+        .navigation-background {
+            position: absolute;
+            width: 100%;
+            height: 100vh;
+            // background: linear-gradient(180deg, rgba(254, 252, 247, 1), rgba(254, 252, 247, 1), rgba(254, 252, 247, 0.1));
+            background: linear-gradient(to top, rgba(254, 252, 247, 0.50) 0%, #FEFCF7 55.94%);
+            left: 0;
+            top: 0;
+            transition: all 0.5s;
+            z-index: -1;
+            opacity: 0;
+        }
+
+        .nav-list {
+            position: absolute;
+            overflow: hidden !important;
+            width: 100%;
+            height: 100vh;
+            top: 0;
+            left: 0;
+            text-align: center;
+            padding-top: 130px;
+            box-sizing: border-box;
+            z-index: -1;
+
+            li {
+                margin-bottom: 32px;
+                transition: all 0.5s;
+
+                a {
+                    color: $darkgreen;
+                    font-size: 24px;
+                    font-weight: 900;
+                    font-family: $font-Fraunces;
+                }
+
+                &:last-child {
+                    margin: 0;
+                    transform: translateX(100%);
+                }
+
+                &:first-child {
+                    transform: translateX(100%);
+                }
+
+                &:nth-child(2) {
+                    transform: translateX(-100%);
+                }
+            }
+        }
+
+        .menu-btns {
+            width: 16px;
+            height: 16px;
+            transition: all 0.5s;
+            z-index: 2;
+        }
+
+
+    }
+
+    .main-section--article {
+        width: 100%;
+        border-radius: 10px;
+        padding: 100px 24px;
+        box-sizing: border-box;
+        text-align: center ;
+
+        background-image: url(./assets/home/mobile/image-hero-coffeepress.jpg);
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+
+        h1 {
+            font-size: 40px;
+            font-weight: 900;
+            margin-bottom: 24px;
+
+            span {
+                display: block;
+            }
+        }
+
+        p {
+            font-family: $font-Barlow;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 25px;
+            opacity: 0.8;
+            margin-bottom: 40px;
+        }
+
+        .a-btn {
+            display: block;
+            background-color: $maingreen;
+            width: 217px;
+            height: 56px;
+            margin: auto;
+            @include flex-row();
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            font-weight: 900;
+            color: $main-white;
+            border-radius: 6px;
+        }
+    }
+
+}
+
+
+.section--our-collection {
+    margin-top: 120px;
+    text-align: center;
+
+    .section--our-collection--header {
+        position: relative;
+        margin-bottom: 40px;
+
+        .white-gradient {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(254, 252, 247, 0.00) 0%, #FEFCF7 100%);
+            top: 0;
+            left: 0;
+        }
+
+        h2 {
+            font-size: 50px;
+            color: #929292;
+            font-weight: bold;
+            font-family: $font-Fraunces;
+        }
+
+    }
+
+    .coffee-type-container {
+        margin-top: 50px;
+
+
+        .coffee-type-img {
+            width: 220px;
+            height: 160px;
+            margin-bottom: 24px;
+        }
+
+        .coffee-type {
+            h3 {
+                font-size: 24px;
+                font-weight: 900;
+                color: $darkgreen;
+                font-family: $font-Fraunces;
+                margin-bottom: 16px;
+            }
+
+            p {
+                font-size: 15px;
+                font-weight: 400;
+                font-family: $font-Barlow;
+                line-height: 25px;
+                color: $darkgreen;
+                max-width: 281px;
+                margin: auto;
+            }
+        }
+    }
+}
+
+
+
