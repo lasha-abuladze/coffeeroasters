@@ -61,6 +61,7 @@ $font-Barlow: "Barlow";
 $darkgreen: #333D4B;
 $maingreen: #0E8784;
 $main-white: #FEFCF7;
+$darkBackground: #2C343E;
 
 
 
@@ -102,9 +103,9 @@ button {
     background: none;
 }
 
-// .section-gen {
-
-// }
+.section-gen {
+    text-align: center;
+}
 
 
 
@@ -253,6 +254,7 @@ button {
 
 .section--our-collection {
     margin-top: 120px;
+    margin-bottom: 120px;
     text-align: center;
 
     .section--our-collection--header {
@@ -309,5 +311,77 @@ button {
     }
 }
 
+.section--choose-us {
+    text-align: center;
+    background-color: $darkBackground;
+    padding: 64px 24px 660px 24px;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    position: relative;
+
+    p {
+        font-size: 15px;
+        font-weight: 400;
+        opacity: 0.8;
+        line-height: 25px;
+        font-family: $font-Barlow;
+    }
+
+    header {
+
+        h2 {
+            font-size: 28px;
+            color: $main-white;
+            font-weight: 900;
+            margin-bottom: 24px;
+            font-family: $font-Fraunces;
+        }
+    }
+
+    .our-benefits--container {
+        position: absolute;
+        top: 0;
+        // background-color: #0E8784;
+        top: 305px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: calc(100% - 48px);
+
+        .our-benefit {
+            background-color: $maingreen;
+            margin-bottom: 24px;
+            width: 100%;
+            height: 382px;
+
+            padding: 72px 13px 51px 13px;
+            box-sizing: border-box;
+
+            border-radius: 8px;
+
+            &:last-child {
+                margin: 0;
+            }
+
+            .benefit-img {
+                width: 71px;
+                height: 71px;
+                margin-bottom: 56px;
+            }
+
+            h3 {
+                font-size: 24px;
+                font-weight: 900;
+                font-family: $font-Fraunces;
+                margin-bottom: 24px;
+            }
+
+            p {
+                max-width: 212px;
+                margin: auto;
+            }
+        }
+    }
+}
 
 
