@@ -64,6 +64,22 @@ button {
   text-align: center;
 }
 
+.a-btn {
+  display: block;
+  background-color: #0E8784;
+  width: 217px;
+  height: 56px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 900;
+  color: #FEFCF7;
+  border-radius: 6px;
+}
+
 .main-section {
   box-sizing: border-box;
   overflow: hidden;
@@ -165,21 +181,6 @@ button {
   line-height: 25px;
   opacity: 0.8;
   margin-bottom: 40px;
-}
-.main-section .main-section--article .a-btn {
-  display: block;
-  background-color: #0E8784;
-  width: 217px;
-  height: 56px;
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  font-size: 18px;
-  font-weight: 900;
-  color: #FEFCF7;
-  border-radius: 6px;
 }
 
 .section--our-collection {
@@ -285,6 +286,49 @@ button {
 }
 .section--choose-us .our-benefits--container .our-benefit p {
   max-width: 212px;
+  margin: auto;
+}
+
+.section--how-works {
+  margin-top: 715px;
+  text-align: center;
+  font-family: "Fraunces";
+}
+.section--how-works h2 {
+  font-size: 24px;
+  font-weight: 900;
+  color: #83888F;
+  margin-bottom: 40px;
+}
+.section--how-works .order-steps {
+  margin-bottom: 94px;
+}
+.section--how-works .order-steps article {
+  margin-bottom: 56px;
+}
+.section--how-works .order-steps article:last-child {
+  margin: 0;
+}
+.section--how-works .order-steps b {
+  color: #FDD6BA;
+  font-size: 72px;
+  font-weight: 900;
+  margin-bottom: 24px;
+  display: block;
+}
+.section--how-works .order-steps h3 {
+  font-size: 28px;
+  font-weight: 900;
+  color: #333D4B;
+  margin-bottom: 24px;
+}
+.section--how-works .order-steps p {
+  max-width: 327px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #333D4B;
+  font-family: "Barlow";
   margin: auto;
 }
 
