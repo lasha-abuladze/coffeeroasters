@@ -80,6 +80,19 @@ button {
   border-radius: 6px;
 }
 
+.logo-container a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+}
+.logo-container .company-name {
+  color: #333D4B;
+  font-family: "Fraunces";
+  font-size: 18px;
+  font-weight: 700;
+}
+
 .main-section {
   box-sizing: border-box;
   overflow: hidden;
@@ -93,18 +106,6 @@ button {
 }
 .main-section .main-section--header .logo-container {
   z-index: 2;
-}
-.main-section .main-section--header .logo-container a {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 6px;
-}
-.main-section .main-section--header .logo-container .company-name {
-  color: #333D4B;
-  font-family: "Fraunces";
-  font-size: 18px;
-  font-weight: 700;
 }
 .main-section .main-section--header .navigation-background {
   position: absolute;
@@ -298,7 +299,7 @@ button {
   font-size: 24px;
   font-weight: 900;
   color: #83888F;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
 }
 .section--how-works .order-steps {
   margin-bottom: 94px;
@@ -330,6 +331,41 @@ button {
   color: #333D4B;
   font-family: "Barlow";
   margin: auto;
+}
+
+.main-footer {
+  margin-top: 120px;
+  background-color: #2C343E;
+  padding: 54px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.main-footer .logo-container {
+  max-width: fit-content;
+  margin-bottom: 48px;
+}
+.main-footer .logo-container .company-name {
+  color: #FEFCF7;
+}
+.main-footer .footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 48px;
+}
+.main-footer .footer-nav a {
+  color: #83888F;
+  font-size: 12px;
+  font-weight: 700;
+  font-family: "Barlow";
+}
+.main-footer .social-medias {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
 }
 
 /*# sourceMappingURL=coffeeroasters.css.map */
