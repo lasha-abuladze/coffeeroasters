@@ -139,6 +139,7 @@ button {
   font-size: 24px;
   font-weight: 900;
   font-family: "Fraunces";
+  text-transform: uppercase;
 }
 .main-section .main-section--header .nav-list li:last-child {
   margin: 0;
@@ -366,6 +367,57 @@ button {
   display: flex;
   flex-direction: row;
   gap: 25px;
+}
+
+@media (min-width: 740px) {
+  body {
+    padding: 40px 52px 72px 52px;
+  }
+  .main-section .main-section--header .nav-list {
+    position: static;
+    height: fit-content;
+    padding: 0px;
+    z-index: 2;
+    width: fit-content;
+  }
+  .main-section .main-section--header .nav-list ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    gap: 32px;
+  }
+  .main-section .main-section--header .nav-list li {
+    margin: 0;
+    color: red;
+    transform: translateX(0%) !important;
+  }
+  .main-section .main-section--header .nav-list li a {
+    font-size: 12px;
+    font-weight: 400;
+    color: #83888F;
+  }
+  .main-section .main-section--header .navigation-background, .main-section .main-section--header .menu-btns {
+    display: none;
+  }
+  .main-section .main-section--article {
+    padding: 103px 58px;
+    text-align: left;
+    background-image: url(./assets/home/tablet/image-hero-coffeepress.jpg);
+  }
+  .main-section .main-section--article h1 {
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 24px;
+  }
+  .main-section .main-section--article h1 span {
+    display: block;
+  }
+  .main-section .main-section--article p {
+    max-width: 398px;
+  }
+  .main-section .main-section--article .create-plan--btn {
+    margin-left: 0;
+  }
 }
 
 /*# sourceMappingURL=coffeeroasters.css.map */

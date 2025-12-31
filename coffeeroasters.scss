@@ -193,6 +193,7 @@ button {
                     font-size: 24px;
                     font-weight: 900;
                     font-family: $font-Fraunces;
+                    text-transform: uppercase;
                 }
 
                 &:last-child {
@@ -250,21 +251,6 @@ button {
             opacity: 0.8;
             margin-bottom: 40px;
         }
-
-        // .a-btn {
-        //     display: block;
-        //     background-color: $maingreen;
-        //     width: 217px;
-        //     height: 56px;
-        //     margin: auto;
-        //     @include flex-row();
-        //     justify-content: center;
-        //     align-items: center;
-        //     font-size: 18px;
-        //     font-weight: 900;
-        //     color: $main-white;
-        //     border-radius: 6px;
-        // }
     }
 
 }
@@ -488,4 +474,83 @@ button {
         @include flex-row();
         gap: 25px;
     }
+}
+
+
+
+
+
+/////////////////////////////////
+/// for tablet screen //////////
+
+@media (min-width: 740px) {
+
+    body {
+        padding: 40px 52px 72px 52px;
+    }
+
+    .main-section {
+
+        .main-section--header {
+
+            .nav-list {
+                position: static;
+                height: fit-content;
+                padding: 0px;
+                z-index: 2;
+                width: fit-content;
+                
+                ul {
+                    @include flex-row();
+                    justify-content: right;
+                    gap: 32px;
+                }
+
+                li {
+                    margin: 0;
+                    color: red;
+                    transform: translateX(0%) !important;
+
+                    a {
+                        font-size: 12px;
+                        font-weight: 400;
+                        color: $grey;
+                    }
+                }
+            }
+
+            .navigation-background, .menu-btns {
+                display: none;
+            }
+
+        }
+
+        .main-section--article {
+            padding: 103px 58px;
+            text-align: left ;
+            background-image: url(./assets/home/tablet/image-hero-coffeepress.jpg);
+
+            h1 {
+                font-size: 48px;
+                font-weight: 900;
+                margin-bottom: 24px;
+
+                span {
+                    display: block;
+                }
+            }
+
+            p {
+
+                max-width: 398px;
+            }
+
+            .create-plan--btn {
+                margin-left: 0;
+            }
+        }
+
+
+    }
+
 }
