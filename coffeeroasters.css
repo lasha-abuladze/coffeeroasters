@@ -371,7 +371,7 @@ button {
 
 @media (min-width: 740px) {
   body {
-    padding: 40px 52px 72px 52px;
+    padding: 71px 52px 72px 52px;
   }
   .main-section .main-section--header .nav-list {
     position: static;
@@ -422,7 +422,7 @@ button {
     margin-top: 115px;
     margin-bottom: 129px;
     position: relative;
-    padding-top: 40px;
+    padding-top: 45px;
     box-sizing: border-box;
   }
   .section--our-collection .section--our-collection--header {
@@ -435,25 +435,31 @@ button {
     margin: 0;
   }
   .section--our-collection .section--our-collection--header h2 {
-    font-size: 145px;
+    font-size: 125px;
     display: block;
   }
   .section--our-collection .coffee-type-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: start;
+    gap: 35px;
   }
   .section--our-collection .coffee-type-container .coffee-type-img {
-    width: 250px;
+    width: 240px;
     height: 180px;
     margin-bottom: 0px;
   }
   .section--our-collection .coffee-type-container .coffee-type {
     text-align: left;
+    padding-top: 15px;
+    box-sizing: border-box;
   }
   .section--our-collection .coffee-type-container .coffee-type h3 {
     margin-bottom: 24px;
+  }
+  .section--choose-us {
+    padding: 64px 24px 660px 24px;
   }
 }
 
