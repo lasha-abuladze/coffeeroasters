@@ -345,7 +345,6 @@ button {
 
     .our-benefits--container {
         position: absolute;
-        top: 0;
         // background-color: #0E8784;
         top: 305px;
         left: 50%;
@@ -392,6 +391,10 @@ button {
     margin-top: 715px;
     text-align: center;
     font-family: $font-Fraunces;
+
+    .section--how-works--decoration {
+        display: none;
+    }
 
     h2 {
         font-size: 24px;
@@ -600,9 +603,104 @@ button {
     }
 
     .section--choose-us {
-        padding: 64px 24px 660px 24px;
+        padding: 64px 24px 390px 24px;
+
+        p {
+            max-width: 540px;
+            margin: auto;
+        }
+
+        header {
+            h2 {
+                font-size: 32px;
+            }
+        }
+
+        .our-benefits--container {
+
+            top: 290px;
+
+            .our-benefit {
+                @include flex-row();
+                align-items: center;
+                justify-content: center;
+                gap: 56px;
+                padding: 41px 48px;
+                height: fit-content;
+
+                .benefit-img {
+                    margin: 0;
+                    width: 55px;
+                    height: 55px;
+                }
+
+                .benefit {
+                    max-width: 100%;
+                    text-align: left;
+
+                    h3 {
+                        margin-bottom: 16px;
+                    }
+
+                    p {
+                        max-width: 344px;
+                        // text-align: left;
+                    }
+                }
+            }
+        }
     }
 
+    .section--how-works {
+        margin-top: 415px;
+        
+        h2 {
+            text-align: left;
+            margin-bottom: 40px;
+        }
 
+        .section--how-works--decoration {
+            display: flex;
+            align-items: center;
+            margin-bottom: 48px;
+
+            .circle {
+                width: 31px;
+                height: 31px;
+                border-radius: 50%;
+                border: 2px solid $maingreen;
+                box-sizing: border-box;
+            }
+
+            .line {
+                width: 202px;
+                height: 2px;
+                background-color: $xx;
+            }
+        }
+
+        .order-steps {
+            @include flex-row();
+            align-items: start;
+            justify-content: space-between;
+            gap: 15px;
+            margin-bottom: 44px;
+            text-align: left;
+
+            article {
+                margin: 0px;
+                text-align: left;
+            }
+
+            
+        }
+        .create-plan--btn {
+            width: 217px;
+            height: 56px;
+            margin-left: 0px;
+        }
+
+    }
+    
 
 }

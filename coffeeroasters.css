@@ -257,7 +257,6 @@ button {
 }
 .section--choose-us .our-benefits--container {
   position: absolute;
-  top: 0;
   top: 305px;
   left: 50%;
   transform: translateX(-50%);
@@ -295,6 +294,9 @@ button {
   margin-top: 715px;
   text-align: center;
   font-family: "Fraunces";
+}
+.section--how-works .section--how-works--decoration {
+  display: none;
 }
 .section--how-works h2 {
   font-size: 24px;
@@ -459,7 +461,83 @@ button {
     margin-bottom: 24px;
   }
   .section--choose-us {
-    padding: 64px 24px 660px 24px;
+    padding: 64px 24px 390px 24px;
+  }
+  .section--choose-us p {
+    max-width: 540px;
+    margin: auto;
+  }
+  .section--choose-us header h2 {
+    font-size: 32px;
+  }
+  .section--choose-us .our-benefits--container {
+    top: 290px;
+  }
+  .section--choose-us .our-benefits--container .our-benefit {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 56px;
+    padding: 41px 48px;
+    height: fit-content;
+  }
+  .section--choose-us .our-benefits--container .our-benefit .benefit-img {
+    margin: 0;
+    width: 55px;
+    height: 55px;
+  }
+  .section--choose-us .our-benefits--container .our-benefit .benefit {
+    max-width: 100%;
+    text-align: left;
+  }
+  .section--choose-us .our-benefits--container .our-benefit .benefit h3 {
+    margin-bottom: 16px;
+  }
+  .section--choose-us .our-benefits--container .our-benefit .benefit p {
+    max-width: 344px;
+  }
+  .section--how-works {
+    margin-top: 415px;
+  }
+  .section--how-works h2 {
+    text-align: left;
+    margin-bottom: 40px;
+  }
+  .section--how-works .section--how-works--decoration {
+    display: flex;
+    align-items: center;
+    margin-bottom: 48px;
+  }
+  .section--how-works .section--how-works--decoration .circle {
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    border: 2px solid #0E8784;
+    box-sizing: border-box;
+  }
+  .section--how-works .section--how-works--decoration .line {
+    width: 202px;
+    height: 2px;
+    background-color: #FDD6BA;
+  }
+  .section--how-works .order-steps {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 44px;
+    text-align: left;
+  }
+  .section--how-works .order-steps article {
+    margin: 0px;
+    text-align: left;
+  }
+  .section--how-works .create-plan--btn {
+    width: 217px;
+    height: 56px;
+    margin-left: 0px;
   }
 }
 
